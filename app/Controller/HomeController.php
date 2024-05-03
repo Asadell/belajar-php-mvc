@@ -7,14 +7,11 @@ use ProgrammerZamanNow\Belajar\PHP\MVC\App\View;
 class HomeController
 {
 
-    function index(): void
+    function index()
     {
-        $model = [
-            "title" => "Belajar PHP MVC",
-            "content" => "Selamat Belajar PHP MVC dari Programmer Zaman Now"
-        ];
-
-        View::render('Home/index', $model);
+        View::render('Home/index', [
+            "title" => "PHP Login Managements"
+        ]);
     }
 
     function hello(): void
